@@ -22,14 +22,3 @@ body {
 #root {
   height: 100vh;
 }
-/* CSS styles */
-.mobile-menu-button {
-  display: none; /* Hide by default */
-}
-
-/* Show the button on screens with a maximum width of 768px (adjust this value as needed) */
-@media (max-width: 768px) {
-  .mobile-menu-button {
-    display: block;
-  }
-}

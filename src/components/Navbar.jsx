@@ -35,6 +35,19 @@ const Navbar = () => {
           </button>
         </div>
       </div>
+      {isOpen && (
+        <div
+          data-theme=""
+          className="h-fit w-full flex gap-1  flex-col flex-wrap  md:hidden relative z-10 top-0 left-0  font-bold  "
+        >
+          <button className="mt-1">Log in</button>
+          {/* {divder} */}
+
+          <div className="divider mt-0 mb-0"></div>
+
+          <button className="">Sign up</button>
+        </div>
+      )}
     </>
   );
 };
