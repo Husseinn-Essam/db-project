@@ -1,11 +1,17 @@
 import { useState } from "react";
 import Navbar from "./components/Navbar";
+import { Route, Routes } from "react-router-dom";
+import Login from "./components/Login";
 
 function App() {
   return (
     <div data-theme="" className="h-full">
       <Navbar />
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      <Routes>
+        <Route path="/login" element={<Login />} />
+
+        <Route path="/" element={<div>hi</div>} />
+      </Routes>
     </div>
   );
 }
